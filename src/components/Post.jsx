@@ -30,7 +30,7 @@ function App() {
   return(
     <div className='post'>
         <div className="from">
-          <h1>Post it Simulator!</h1>
+          <h1 style={{color: "black"}}>Post it Simulator!</h1>
         <input
         type='text'
         placeholder='Titulo'
@@ -55,7 +55,7 @@ function App() {
         Importante
         </div>
         
-        <button onClick={agregarnota}>Agregar Nota</button>
+        <button style={{background:"#111",color:'white'}} onClick={agregarnota}>Agregar Nota</button>
 
         </div>
         <div className="notas" >
