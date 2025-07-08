@@ -8,6 +8,10 @@ function App() {
   const [descripcion, setDescripcion ] = useState('');
   const [importante, setImportante] = useState(false); //aca si el usuario ingresa que el post es importante se volvera True
   const agregarnota = () =>{
+    if(!titulo.trim() || !descripcion.trim()){
+      alert("Campos vacios");
+      return
+    }
     const nuevanota = {
       id: uuid(),
       titulo,
